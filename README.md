@@ -32,12 +32,17 @@ python src/dataforge.py --count 50 --fields name email --delimiter ";"
 ```
 
 ## Options
---count: Number of records to generate (default: 100).
---format: Export format (csv or json).
---fields: Fields to include in the generated data (space-separated values).
-Available fields: name, email, address, phone_number, credit_card.
---pretty: Prettify JSON output (applies to JSON format only).
---delimiter: CSV delimiter (applies to CSV format only, default: ,).
-Running Tests
-To run the unit tests: python -m unittest discover tests
+- `--count`: Number of records to generate (default: 100).
+- `--format`: Export format (`csv` or `json`).
+- `--fields`: Fields to include in the generated data (space-separated values).
+  - Available fields: `name`, `email`, `address`, `phone_number`, `credit_card`.
+- `--pretty`: Prettify JSON output (applies to JSON format only).
+- `--delimiter`: CSV delimiter (applies to CSV format only, default: `,`).
+
+## Running Tests
+
+To run the unit tests:
+```bash
+python -m unittest discover tests
+```
 
